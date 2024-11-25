@@ -4,7 +4,7 @@
     background-color: #272727;
 }
 body {
-    font-family: "New Rocker", system-ui;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     justify-content: center;
@@ -216,33 +216,33 @@ ul.submenu > li:hover > a {
     border-radius: 10px;
 }
 
-.display-item__name{
+.display-item__name {
     font-size: 13px;
     color: black;
-    transition: .2s;
+    transition: 0.2s;
 }
 
-.display-item__name:hover{
+.display-item__name:hover {
     color: #2a95ff;
 }
 
-.display-value{
+.display-value {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.display-item__valuesale{
+.display-item__valuesale {
     color: red;
     font-size: 16px;
 }
 
-.display-item__value{
+.display-item__value {
     font-size: 12px;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 
-.display-buy{
+.display-buy {
     width: 80%;
     height: 26px;
     border-radius: 5px;
@@ -254,12 +254,12 @@ ul.submenu > li:hover > a {
     align-items: center;
 }
 
-.display-buybtn{
+.display-buybtn {
     text-align: center;
 }
 
-.display-itemimg{
-    transition: .4s;
+.display-itemimg {
+    transition: 0.4s;
 }
 
 .display-itemimg:hover {
