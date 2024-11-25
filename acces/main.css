@@ -1,0 +1,267 @@
+.header {
+    width: 100%;
+    height: 110px;
+    background-color: #272727;
+}
+body {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+.navbarlist {
+    padding-left: 0;
+    margin: auto 26px;
+}
+
+.navbaritem {
+    display: inline-block;
+    list-style: none;
+    margin: 0 16px;
+}
+
+a:hover {
+    color: #c2c2c2;
+}
+
+.Slideshow {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+i {
+    color: blue;
+    background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+
+i:hover {
+    color: white;
+    background-color: blue;
+}
+
+.footer {
+    background-color: #424242;
+    color: white;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ip1 + img {
+    padding-bottom: 10px;
+    margin-top: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+}
+ul.dropdown_menu > li > ul.submenu {
+    position: absolute;
+    display: none;
+    left: 200px;
+    list-style: none;
+    width: 200px;
+}
+ul.dropdown_menu > li:hover > a {
+    background-color: #5c5c5c !important;
+}
+ul.dropdown_menu > li:hover > ul.submenu {
+    z-index: 100;
+    display: block;
+}
+ul.submenu > li:hover > a {
+    background-color: #5c5c5c !important;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.arrow-down {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+}
+.arrow-right {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+}
+
+.vmax {
+    position: relative;
+    padding: 10px;
+    z-index: 9999;
+}
+.dropmenuv1 {
+    position: absolute;
+    list-style: none;
+    background-color: rgba(3, 3, 3, 0.836);
+    display: flex;
+    right: 10px;
+    top: 38px;
+    border-radius: 10px;
+    display: none;
+    transition: 0.5s;
+}
+.dropmenuv1 > li:hover {
+    transform: translateY(-10px);
+}
+
+.dropmenuv1 > li > a {
+    color: rgb(255, 255, 255);
+}
+.dropmenuv1 > li {
+    padding: 20px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.dropmenuv1 > li:last-child {
+    border-right: none;
+}
+.vmax:hover > .dropmenuv1 {
+    display: flex;
+}
+.v2 {
+    position: relative;
+    padding: 10px;
+}
+.dropmenuv2 {
+    position: absolute;
+    list-style: none;
+    background-color: rgba(3, 3, 3, 0.836);
+    display: flex;
+    right: 10px;
+    top: 60px;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: none;
+}
+
+.dropmenuv2 > li {
+    padding: 20px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.v2:hover > .dropmenuv2 {
+    display: flex;
+}
+.dropmenuv2 > li:hover {
+    transform: translateY(-20px);
+}
+.container {
+    width: 1000px;
+    height: 700px;
+    border: 1px solid #272727;
+    justify-content: center;
+    align-items: center;
+}
+.border {
+    margin: 0 auto;
+    width: 960px;
+    max-width: calc(100% - 48px);
+    padding: 50px 0;
+}
+
+/* MEdia */
+@media (max-width: 1290px) {
+    .vmax {
+        display: none;
+    }
+}
+
+.display-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.display-item__mobile img {
+    width: 150px;
+    height: 160px;
+}
+
+.display-item__mobile {
+    border: 0.1px solid rgba(128, 128, 128, 0.123);
+    border-radius: 10px;
+}
+
+.display-item__name{
+    font-size: 13px;
+    color: black;
+    transition: .2s;
+}
+
+.display-item__name:hover{
+    color: #2a95ff;
+}
+
+.display-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-item__valuesale{
+    color: red;
+    font-size: 16px;
+}
+
+.display-item__value{
+    font-size: 12px;
+    margin-left: 5px; 
+}
+
+.display-buy{
+    width: 80%;
+    height: 26px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 3px;
+    background-color: #dcecfc;
+    color: #2a95ff;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-buybtn{
+    text-align: center;
+}
+
+.display-itemimg{
+    transition: .4s;
+}
+
+.display-itemimg:hover {
+    transform: translateY(-4px);
+}
